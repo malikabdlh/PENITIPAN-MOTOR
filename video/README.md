@@ -60,6 +60,8 @@ public/audio/
   vo/                  # voice-over per scene (MP3)
   music/bgm.wav        # musik latar prosedural
   sfx/                 # whoosh, click, success
+public/images/
+  github-qr.png        # QR menuju repo GitHub (dipakai di CTA)
 scripts/
   vo/                  # teks & SRT voice-over
   generate_vo.*        # catatan pembuatan voice-over
@@ -82,5 +84,10 @@ Untuk mengganti dengan suara ElevenLabs:
 
 - Angka di dashboard dan laporan adalah data contoh untuk keperluan video.
 - QRIS ditampilkan sebagai **simulasi**, bukan payment gateway sungguhan.
-- Alamat demo `localhost/pkk alik` dapat diganti di `src/scenes/S10Cta.tsx`.
+- CTA video memakai QR dan link repo GitHub. QR ada di
+  `video/public/images/github-qr.png`, sedangkan teks link diatur di
+  `src/scenes/S10Cta.tsx`.
+- QR tersebut memakai shortlink `https://q.me-qr.com/84kg7afk` yang mengarah ke
+  `https://github.com/malikabdlh/PENITIPAN-MOTOR`. Untuk QR permanen, ganti
+  gambar dengan QR yang langsung berisi URL repo.
 - Nama, warna, dan logo dapat diubah di `src/theme.ts` dan `src/components/ui.tsx`.

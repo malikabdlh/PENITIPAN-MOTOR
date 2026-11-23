@@ -1,5 +1,5 @@
 import React from "react";
-import { interpolate, useCurrentFrame } from "remotion";
+import { Img, interpolate, staticFile, useCurrentFrame } from "remotion";
 import { colors } from "../theme";
 import { Logo, Badge } from "../components/ui";
 import { clamp, useEnter, usePop } from "../lib/motion";
@@ -74,33 +74,102 @@ export const S10Cta: React.FC = () => {
             ...cta,
             display: "flex",
             alignItems: "center",
-            gap: 12,
-            marginTop: 38,
+            gap: 18,
+            marginTop: 30,
+            background: "#fff",
+            border: `1px solid ${colors.line}`,
+            borderRadius: 12,
+            padding: 14,
+            boxShadow: "0 18px 45px rgba(26,37,47,.08)",
           }}
         >
           <div
             style={{
-              background: "#fff",
-              border: `1px solid ${colors.line}`,
-              borderRadius: 7,
-              padding: "11px 16px",
-              fontSize: 16,
-              color: colors.ink,
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              gap: 6,
             }}
           >
-            localhost/pkk alik
+            <div
+              style={{
+                padding: 6,
+                border: `1px solid ${colors.line}`,
+                borderRadius: 8,
+                background: "#fff",
+              }}
+            >
+              <Img
+                src={staticFile("images/github-qr.png")}
+                style={{ width: 188, height: 188, display: "block" }}
+              />
+            </div>
+            <div style={{ fontSize: 10, color: colors.muted }}>
+              Scan untuk buka repo
+            </div>
           </div>
-          <div
-            style={{
-              background: colors.red,
-              color: "#fff",
-              borderRadius: 7,
-              padding: "12px 22px",
-              fontSize: 16,
-              fontWeight: 700,
-            }}
-          >
-            Coba demo
+
+          <div style={{ width: 420, textAlign: "left" }}>
+            <div
+              style={{
+                fontSize: 11,
+                letterSpacing: 2.4,
+                fontWeight: 700,
+                color: colors.red,
+              }}
+            >
+              REPO GITHUB
+            </div>
+            <div
+              style={{
+                fontSize: 24,
+                fontWeight: 800,
+                color: colors.ink,
+                marginTop: 2,
+              }}
+            >
+              PENITIPAN-MOTOR
+            </div>
+            <div style={{ fontSize: 14, color: colors.muted, marginTop: 3 }}>
+              github.com/malikabdlh/PENITIPAN-MOTOR
+            </div>
+            <div
+              style={{
+                fontSize: 12.5,
+                color: colors.muted,
+                marginTop: 9,
+                lineHeight: 1.45,
+              }}
+            >
+              Source code aplikasi dan video Remotion. Jalankan secara lokal
+              sesuai panduan di README.
+            </div>
+            <div style={{ display: "flex", gap: 7, marginTop: 12 }}>
+              <div
+                style={{
+                  background: colors.red,
+                  color: "#fff",
+                  borderRadius: 6,
+                  padding: "8px 14px",
+                  fontSize: 13,
+                  fontWeight: 700,
+                }}
+              >
+                Buka di GitHub
+              </div>
+              <div
+                style={{
+                  border: `1px solid ${colors.line}`,
+                  borderRadius: 6,
+                  padding: "8px 14px",
+                  fontSize: 13,
+                  fontWeight: 600,
+                  color: colors.ink,
+                }}
+              >
+                PHP · MySQL
+              </div>
+            </div>
           </div>
         </div>
 
