@@ -1,0 +1,137 @@
+/* Motor Park — gaya minimal */
+:root{
+  --red:#C0392B;
+  --red-dark:#922B21;
+  --red-soft:#F9EBE9;
+  --ink:#2C3E50;
+  --muted:#7F8C8D;
+  --line:#E3E6E9;
+  --bg:#F4F5F6;
+  --white:#FFFFFF;
+  --green:#1E8449;
+  --green-soft:#E8F8F0;
+  --amber:#9A7D0A;
+  --amber-soft:#FCF3CF;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,"Segoe UI",Roboto,Arial,sans-serif;background:var(--bg);color:var(--ink);font-size:14px;line-height:1.5}
+a{color:var(--red);text-decoration:none}
+a:hover{text-decoration:underline}
+
+/* Kerangka */
+.app{display:flex;min-height:100vh}
+.sidebar{width:228px;background:var(--white);border-right:1px solid var(--line);position:fixed;top:0;bottom:0;left:0;display:flex;flex-direction:column;z-index:50;transition:transform .2s}
+.brand{padding:18px 18px 14px;font-weight:700;font-size:15px;display:flex;align-items:center;gap:9px;border-bottom:1px solid var(--line)}
+.brand .mark{width:12px;height:12px;background:var(--red);border-radius:3px;flex:none}
+.brand small{display:block;font-size:11px;font-weight:400;color:var(--muted)}
+.nav{flex:1;padding:10px 12px;overflow-y:auto}
+.nav a{display:block;color:#5D6D7E;padding:8px 10px;border-radius:6px;margin-bottom:1px;font-size:13.5px}
+.nav a:hover{background:#F2F4F4;text-decoration:none;color:var(--ink)}
+.nav a.active{background:var(--red-soft);color:var(--red);font-weight:600}
+.nav .sep{font-size:10.5px;text-transform:uppercase;letter-spacing:.08em;color:#B2BABB;margin:14px 10px 5px}
+.side-foot{padding:12px 18px;font-size:12px;color:var(--muted);border-top:1px solid var(--line)}
+.side-foot a{display:inline-block;margin-top:4px;font-size:12px;color:var(--muted)}
+.side-foot a:hover{color:var(--red)}
+.main{flex:1;margin-left:228px;display:flex;flex-direction:column;min-width:0}
+.topbar{background:var(--white);border-bottom:1px solid var(--line);padding:11px 20px;display:flex;align-items:center;gap:12px;position:sticky;top:0;z-index:40}
+.topbar h1{font-size:15px;font-weight:600;margin:0;flex:1}
+.userbox{font-size:12.5px;color:var(--muted)}
+.btn-logout{background:var(--white);color:var(--ink);border:1px solid var(--line);padding:7px 13px;border-radius:7px;font-size:13px;cursor:pointer}
+.btn-logout:hover{border-color:var(--ink)}
+.hamburger{display:none;background:var(--white);border:1px solid var(--line);border-radius:7px;padding:7px 11px;cursor:pointer}
+.content{padding:20px;max-width:1150px;width:100%;margin:0 auto}
+
+/* Kartu ringkasan */
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin-bottom:16px}
+.card{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:14px 16px}
+.card .label{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+.card .value{font-size:24px;font-weight:700;margin:4px 0 2px}
+.card .sub{font-size:12px;color:var(--muted)}
+
+/* Panel dan tabel */
+.panel{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:18px;margin-bottom:16px}
+.panel h3{margin:0 0 12px;font-size:14px;font-weight:600}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+table{width:100%;border-collapse:collapse;font-size:13.5px}
+th,td{padding:9px 8px;border-bottom:1px solid #EEF1F3;text-align:left;vertical-align:top}
+th{font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);font-weight:600;border-bottom:1px solid var(--line)}
+tr:hover td{background:#FAFBFB}
+.badge{display:inline-block;padding:3px 9px;border-radius:99px;font-size:11.5px;font-weight:600;background:#EEF1F3;color:#5D6D7E}
+.b-aktif,.b-terisi{background:var(--red-soft);color:var(--red-dark)}
+.b-selesai,.b-lunas,.b-tersedia{background:var(--green-soft);color:var(--green)}
+.b-pending{background:var(--amber-soft);color:var(--amber)}
+.b-admin{background:var(--ink);color:#fff}
+.b-petugas{background:#EAF2F8;color:#2E86C1}
+
+/* Durasi penitipan berjalan */
+.durasi-live{display:inline-block;font-variant-numeric:tabular-nums;font-weight:700;color:var(--green);white-space:nowrap}
+.durasi-note{display:block;font-size:11.5px;font-weight:400;color:var(--muted);white-space:nowrap}
+
+/* Form dan tombol */
+.form-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px}
+label{font-size:12.5px;font-weight:600;display:block;margin-bottom:5px}
+input,select,textarea{width:100%;padding:9px 11px;border:1px solid #D5DADF;border-radius:7px;font-size:14px;font-family:inherit;background:#fff;color:var(--ink)}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--red);box-shadow:0 0 0 2px var(--red-soft)}
+.btn{display:inline-block;padding:9px 15px;border-radius:7px;border:1px solid transparent;cursor:pointer;font-size:13.5px;font-weight:600;font-family:inherit}
+.btn-red{background:var(--red);color:#fff}
+.btn-red:hover{background:var(--red-dark)}
+.btn-dark{background:var(--ink);color:#fff}
+.btn-green{background:var(--green);color:#fff}
+.btn-grey{background:#fff;border-color:var(--line);color:var(--ink)}
+.btn-grey:hover{border-color:var(--ink)}
+.btn-small{padding:6px 10px;font-size:12.5px}
+.alert{padding:11px 13px;border-radius:8px;margin-bottom:14px;font-size:13.5px;border:1px solid}
+.alert-success{background:var(--green-soft);color:var(--green);border-color:#A9DFBF}
+.alert-error{background:var(--red-soft);color:var(--red-dark);border-color:#F0C9C4}
+.toolbar{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px;align-items:center}
+.toolbar input,.toolbar select{width:auto;min-width:190px}
+.ticket{background:#fff;border:1px solid var(--line);border-left:3px solid var(--red);border-radius:8px;padding:16px 18px;margin-bottom:14px}
+.ticket .no{font-size:22px;font-weight:700;letter-spacing:2px}
+
+/* Slot */
+.slots{display:grid;grid-template-columns:repeat(auto-fill,minmax(104px,1fr));gap:8px}
+.slot{border:1px solid var(--line);border-radius:8px;padding:12px 8px;text-align:center;font-weight:600;font-size:13px;background:#fff}
+.slot small{font-weight:400;color:var(--muted)}
+.slot.tersedia{border-color:#A9DFBF;color:var(--green)}
+.slot.terisi{border-color:#F0C9C4;background:var(--red-soft);color:var(--red-dark)}
+.slot.terisi small{color:var(--red-dark)}
+
+/* Login */
+.login-wrap{min-height:100vh;display:flex;align-items:center;justify-content:center;background:#ECEEF0;padding:16px}
+.login-box{background:#fff;border:1px solid var(--line);border-radius:12px;padding:26px;width:100%;max-width:360px}
+.login-box h2{margin:0 0 2px;font-size:18px}
+.login-box h2 .mark{display:inline-block;width:11px;height:11px;background:var(--red);border-radius:3px;margin-right:8px}
+.login-box p{color:var(--muted);font-size:13px}
+.login-demo{background:#F7F8F9;border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px;margin-top:14px}
+
+/* QRIS simulasi (pola QR digambar oleh JS, bukan kode QR asli) */
+.qris-box{border:1px dashed #C9CED3;border-radius:8px;padding:12px;background:#FAFBFB;text-align:center}
+.qris-note{font-size:11.5px;color:var(--muted);margin:2px 0}
+.qris-timer{font-variant-numeric:tabular-nums;font-weight:700;color:var(--ink)}
+.qr{width:170px;height:170px;margin:10px auto;padding:8px;background:#fff;border:1px solid var(--line);border-radius:6px;display:grid;grid-template-columns:repeat(25,1fr);grid-template-rows:repeat(25,1fr)}
+.qr i{display:block}
+.qr i.on{background:var(--ink)}
+
+/* Struk */
+.struk{max-width:360px;margin:0 auto;background:#fff;padding:20px;border:1px solid var(--line);border-radius:8px}
+.struk h2,.struk h4{text-align:center;margin:4px 0;font-size:15px}
+.struk table{font-size:13px}
+.struk .total{font-size:17px;font-weight:700}
+
+.foot{text-align:center;font-size:12px;color:#AEB6BF;padding:16px}
+
+/* HP */
+@media(max-width:860px){
+  .sidebar{transform:translateX(-100%);box-shadow:0 0 30px rgba(0,0,0,.08)}
+  .sidebar.open{transform:translateX(0)}
+  .main{margin-left:0}
+  .hamburger{display:inline-block}
+  .grid2{grid-template-columns:1fr}
+  .content{padding:14px}
+}
+@media print{
+  .sidebar,.topbar .hamburger,.topbar .btn-logout,.no-print{display:none!important}
+  .main{margin:0}
+  .content{padding:0;max-width:none}
+  .panel,.card{border:1px solid #ddd}
+}

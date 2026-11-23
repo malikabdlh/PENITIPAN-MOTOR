@@ -1,0 +1,4 @@
+1
+00:00:00,100 --> 00:00:07,695
+Semua data penting ada di satu dashboard: motor yang dititip, transaksi hari ini, pendapatan, dan slot tersedia.
+

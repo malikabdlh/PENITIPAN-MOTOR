@@ -1,0 +1,12 @@
+1
+00:00:00,100 --> 00:00:03,473
+Saat motor keluar, cari tiket atau nopol.
+
+2
+00:00:03,423 --> 00:00:06,311
+Durasi dan biaya dihitung otomatis.
+
+3
+00:00:06,311 --> 00:00:11,384
+Bayar cash, transfer, atau QRIS simulasi, lalu cetak struk.
+

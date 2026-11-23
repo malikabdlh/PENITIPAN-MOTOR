@@ -1,0 +1,12 @@
+1
+00:00:00,100 --> 00:00:01,859
+Motor masuk?
+
+2
+00:00:01,809 --> 00:00:04,236
+Cukup isi data dan pilih slot.
+
+3
+00:00:04,236 --> 00:00:08,277
+Nomor tiket dibuat otomatis, waktunya tercatat sendiri.
+

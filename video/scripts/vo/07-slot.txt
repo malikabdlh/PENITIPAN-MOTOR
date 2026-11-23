@@ -1,0 +1,1 @@
+Slot parkir terlihat real-time, dan tarif bisa diatur kapan saja oleh admin.

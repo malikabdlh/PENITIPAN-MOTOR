@@ -1,0 +1,8 @@
+1
+00:00:00,100 --> 00:00:06,300
+Tiket hilang, biaya salah hitung, slot tidak terkontrol, dan laporan pendapatan berantakan.
+
+2
+00:00:06,250 --> 00:00:08,363
+Ribet, kan?
+

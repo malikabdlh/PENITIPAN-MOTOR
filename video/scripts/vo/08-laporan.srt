@@ -1,0 +1,8 @@
+1
+00:00:00,100 --> 00:00:04,091
+Laporan pendapatan harian sampai bulanan tinggal filter tanggal.
+
+2
+00:00:04,041 --> 00:00:06,942
+Bisa dicetak atau diexport ke Excel.
+

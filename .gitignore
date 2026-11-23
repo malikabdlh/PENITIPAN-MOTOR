@@ -1,0 +1,16 @@
+# Dependencies
+video/node_modules/
+
+# Generated video output
+video/out/
+
+# OS / editor
+Thumbs.db
+Desktop.ini
+.DS_Store
+.vscode/
+.idea/
+
+# Logs / temp
+*.log
+*.tmp

@@ -1,0 +1,1 @@
+Saat motor keluar, cari tiket atau nopol. Durasi dan biaya dihitung otomatis. Bayar cash, transfer, atau QRIS simulasi, lalu cetak struk.

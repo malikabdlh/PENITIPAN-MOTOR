@@ -1,0 +1,1 @@
+Motor masuk? Cukup isi data dan pilih slot. Nomor tiket dibuat otomatis, waktunya tercatat sendiri.

@@ -1,0 +1,21 @@
+{
+  "name": "motor-park-video",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Video marketing MOTOR PARK dibuat dengan Remotion",
+  "scripts": {
+    "dev": "remotion studio",
+    "render": "remotion render MotorPark out/motor-park.mp4",
+    "still": "remotion still MotorPark out/frame.png"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.545",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "remotion": "4.0.545"
+  },
+  "devDependencies": {
+    "@types/react": "18.3.12",
+    "typescript": "5.6.3"
+  }
+}

@@ -1,0 +1,1 @@
+Semua data penting ada di satu dashboard: motor yang dititip, transaksi hari ini, pendapatan, dan slot tersedia.
